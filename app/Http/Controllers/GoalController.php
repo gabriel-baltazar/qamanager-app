@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\objectives;
+use App\Models\Goal;
 use Illuminate\Http\Request;
 
-class ObjectivesController extends Controller
+class GoalController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ObjectivesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\objectives  $objectives
+     * @param  \App\Models\Goal  $goal
      * @return \Illuminate\Http\Response
      */
-    public function show(objectives $objectives)
+    public function show(Goal $goal)
     {
         //
     }
@@ -52,10 +52,10 @@ class ObjectivesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\objectives  $objectives
+     * @param  \App\Models\Goal  $goal
      * @return \Illuminate\Http\Response
      */
-    public function edit(objectives $objectives)
+    public function edit(Goal $goal)
     {
         //
     }
@@ -64,10 +64,10 @@ class ObjectivesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\objectives  $objectives
+     * @param  \App\Models\Goal  $goal
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, objectives $objectives)
+    public function update(Request $request, Goal $goal)
     {
         //
     }
@@ -75,10 +75,10 @@ class ObjectivesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\objectives  $objectives
+     * @param  \App\Models\Goal  $goal
      * @return \Illuminate\Http\Response
      */
-    public function destroy(objectives $objectives)
+    public function destroy(Goal $goal)
     {
         //
     }

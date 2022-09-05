@@ -13,6 +13,6 @@ class Impacts extends Model
 
     public function report()
     {
-        return $this->hasOne(ReportsDiarios::class, 'id', 'report_id');
+        return $this->hasOne(Reports::class, 'id', 'report_id');
     }
 }

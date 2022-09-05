@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('impact_description');
             $table->string('flagged', 250);
             $table->string('impact_hours');
-            $table->bigInteger('report_id')->unsigned();
+            $table->foreignId('report_id')->constrained('reports');
         });
     }
 

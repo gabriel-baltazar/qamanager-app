@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->tinyInteger('type')->comment('1: Modeling, 2: execution, 3: other');
             $table->bigInteger('quantity');
-            $table->bigInteger('report_id')->unsigned();
+            $table->foreignId('report_id')->constrained('reports');
         });
     }
 

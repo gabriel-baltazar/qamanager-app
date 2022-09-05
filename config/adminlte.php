@@ -338,6 +338,11 @@ return [
                     'icon' => '',
                     'url'  => 'reports/create',
                 ],
+                [
+                    'text' => 'Todos Reports',
+                    'icon' => '',
+                    'url'  => 'reports',
+                ],
             ],
         ],
         // ['header' => 'labels'],

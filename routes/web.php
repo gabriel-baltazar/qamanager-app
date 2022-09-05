@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ReportsDiariosController;
+use App\Http\Controllers\ReportsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +23,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::resource('reports', ReportsDiariosController::class)->name('*','reports');
+Route::resource('reports', ReportsController::class)->name('*','reports');

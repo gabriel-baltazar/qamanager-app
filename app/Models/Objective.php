@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Goals extends Model
+class Objective extends Model
 {
     use HasFactory;
     
@@ -13,6 +13,6 @@ class Goals extends Model
 
     public function report()
     {
-        return $this->hasOne(ReportsDiarios::class, 'id', 'report_id');
+        return $this->belongsTo(Reports::class, 'report_id', 'id');
     }
 }

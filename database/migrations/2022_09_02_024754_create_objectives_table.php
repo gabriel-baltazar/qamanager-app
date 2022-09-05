@@ -19,7 +19,7 @@ return new class extends Migration
             $table->date('date_end');
             $table->bigInteger('quantity');
             $table->bigInteger('progress');
-            $table->bigInteger('report_id')->unsigned();
+            $table->foreignId('report_id')->constrained('reports');
         });
     }
 

@@ -5,12 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ReportsDiarios extends Model
+class Goal extends Model
 {
     use HasFactory;
+    
+    public $timestamps = false;
 
-    public function user()
+    public function report()
     {
-        return $this->hasOne(User::class, 'id', 'user_id');
+        return $this->belongsTo(Reports::class, 'report_id', 'id');
     }
 }

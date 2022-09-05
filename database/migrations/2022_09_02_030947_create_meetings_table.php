@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->text('description');
             $table->string('duration');
-            $table->bigInteger('report_id')->unsigned();
+            $table->foreignId('report_id')->constrained('reports');
         });
     }
 
